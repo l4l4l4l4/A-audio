@@ -48,7 +48,7 @@ $(document).ready(function() {
 
 
         var finder = new Applait.Finder({ type: "sdcard", debugMode: true });
-        finder.search("audio.json");
+        finder.search("config.json");
 
 
 
@@ -60,7 +60,7 @@ $(document).ready(function() {
         finder.on("searchComplete", function(needle, filematchcount) {
 
             if (filematchcount == 0) {
-                alert("no markers.json file found");
+                alert("no config.json file found");
                 return;
             }
         })
